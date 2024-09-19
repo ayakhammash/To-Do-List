@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', loadTasks);
-document.getElementById('addTaskBtn').addEventListener('click', addTask);
-document.getElementById('clearAllBtn').addEventListener('click', clearAllTasks);
+document.getElementById('addTask').addEventListener('click', addTask);
+document.getElementById('clearAll').addEventListener('click', clearAllTasks);
 document.getElementById('taskInput').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') addTask();
 });
@@ -10,7 +10,7 @@ function addTask() {
     const task = taskInput.value.trim();
 
     if (task === "") {
-        alert("Please enter a task.");
+        alert("Enter a task.");
         return;
     }
 
